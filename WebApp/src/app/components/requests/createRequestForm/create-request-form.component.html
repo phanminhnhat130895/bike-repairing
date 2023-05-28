@@ -1,0 +1,23 @@
+<div *ngIf="form" class="form-container">
+    <form [formGroup]="form" (ngSubmit)="onCreateRequest()">
+        <h2>Create Request</h2>
+        <div class="input-container">
+            <label class="label">Name <span class="required">(*)</span></label>
+            <input type="text" formControlName="name" class="input" />
+        </div>
+        <div class="input-container">
+            <label class="label">Email <span class="required">(*)</span></label>
+            <input type="text" formControlName="email" class="input" />
+        </div>
+        <div class="input-container">
+            <label class="label">Description <span class="required">(*)</span></label>
+            <textarea type="text" formControlName="description" class="input" rows="5"></textarea>
+        </div>
+        <div>
+            <button type="submit" appDebounceClick [disabled]='form.invalid' class="submit-button"
+                    style="float: right;">
+                Create
+            </button>
+        </div>
+    </form>
+</div>

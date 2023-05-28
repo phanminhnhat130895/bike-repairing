@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.required {
+    color: #dc3545;
+}
+
+.submit-button {
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.submit-button:disabled {
+    background-color: #6c757d;
+    cursor: context-menu;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.label {
+    width: 150px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.input {
+    width: 100%;
+    padding: 5px;
+}
