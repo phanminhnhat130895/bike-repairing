@@ -1,4 +1,4 @@
-# test-cyclix
+# bike-repairing
 
 # Back-end setup
 - Download and install .NET 6 Runtime. https://dotnet.microsoft.com/en-us/download/dotnet/6.0
